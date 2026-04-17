@@ -1,20 +1,35 @@
+# =====================
 # Dependencias
+# =====================
 node_modules/
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# =====================
 # Compilación TypeScript
+# =====================
 dist/
 build/
 *.js.map
+*.tsbuildinfo
 
+# =====================
 # Variables de entorno
+# =====================
 .env
 .env.local
 .env.*.local
 
+# =====================
 # Editores
+# =====================
 .vscode/
 .idea/
 *.suo
@@ -23,10 +38,8 @@ build/
 *.sln
 *.sw?
 
+# =====================
 # Sistema operativo
+# =====================
 .DS_Store
 Thumbs.db
-
-# Logs
-logs/
-*.log

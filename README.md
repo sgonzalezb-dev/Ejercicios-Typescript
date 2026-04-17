@@ -1,6 +1,6 @@
-# Ejercicios TypeScript
+# 🧠 Ejercicios en TypeScript
 
-Solución de 4 ejercicios prácticos en TypeScript con tipado estricto, modularidad y buenas prácticas.
+Este repositorio contiene la solución de múltiples ejercicios prácticos desarrollados en TypeScript, enfocados en lógica de programación, estructuras de datos, programación funcional y buenas prácticas.
 
 ---
 
@@ -8,23 +8,46 @@ Solución de 4 ejercicios prácticos en TypeScript con tipado estricto, modulari
 
 ```
 /
-├── cajeroautomatico.ts
-├── carrito.ts
-├── digiturno.ts
-├── estadio.ts
-├── sistemah.ts
+├── src/
+│   ├── banco.ts
+│   ├── cajero.ts
+│   ├── cajeroautomatico.ts
+│   ├── carrito.ts
+│   ├── cine.ts
+│   ├── digiturno.ts
+│   ├── estadio.ts
+│   ├── lavadoras.ts
+│   ├── sistemah.ts
+│   └── index.ts
+│
 ├── package.json
-├── package-lock.json
-├── bun.lock
+├── tsconfig.json
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🛠️ Requisitos previos
+## 🧠 Descripción de los ejercicios
 
-- [Node.js](https://nodejs.org/) v18 o superior
-- npm v9 o superior
+| Archivo             | Descripción                                    |
+| ------------------- | ---------------------------------------------- |
+| banco.ts            | Sistema de cuentas bancarias                   |
+| cajero.ts           | Simulación básica de cajero                    |
+| cajeroautomatico.ts | Cajero completo con historial de transacciones |
+| carrito.ts          | Sistema de compras con carrito                 |
+| cine.ts             | Venta de boletas con control de asientos       |
+| digiturno.ts        | Sistema de turnos (FIFO)                       |
+| estadio.ts          | Reservas por zonas                             |
+| lavadoras.ts        | Alquiler de lavadoras por horas                |
+| sistemah.ts         | Sistema de hotel con reservas y descuentos     |
+
+---
+
+## 🛠️ Requisitos
+
+* Node.js v18+
+* npm
 
 ---
 
@@ -38,47 +61,52 @@ npm install
 
 ## ▶️ Ejecución
 
-Cada ejercicio se puede correr individualmente con `ts-node`:
+### Ejecutar todo el sistema
 
 ```bash
-# Cajero Automático
-npx ts-node cajeroautomatico.ts
+npx ts-node src/index.ts
+```
 
-# Carrito de Compras
-npx ts-node carrito.ts
+### Ejecutar un archivo específico
 
-# Digiturno
-npx ts-node digiturno.ts
-
-# Estadio
-npx ts-node estadio.ts
-
-# Sistema H
-npx ts-node sistemah.ts
+```bash
+npx ts-node src/cajeroautomatico.ts
+npx ts-node src/cine.ts
 ```
 
 ---
 
-## 🧠 Descripción de los ejercicios
+## ⚙️ Tecnologías utilizadas
 
-| Archivo | Descripción |
-|--------|-------------|
-| `cajeroautomatico.ts` | Cajero bancario con retiros, consignaciones y transferencias entre cuentas |
-| `carrito.ts` | Tienda con carrito de compras, control de stock y factura final |
-| `digiturno.ts` | Sistema de gestión de turnos digitales |
-| `estadio.ts` | Sistema de reservas para estadio con zonas y precios |
-| `sistemah.ts` | Sistema de reservas de hotel con habitaciones, clientes VIP e ingresos|
+* TypeScript
+* Node.js
+* ts-node
 
 ---
 
-## ⚙️ Tecnologías usadas
+## 🧠 Buenas prácticas implementadas
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [ts-node](https://typestrong.org/ts-node/)
-- Node.js
+* Tipado estricto
+* Modularidad (archivos separados)
+* Validaciones de datos
+* Manejo de estados (disponible/ocupado)
+* Programación funcional:
+
+  * map()
+  * filter()
+  * reduce()
 
 ---
 
-## 👤 Autor
+## 🚫 Notas importantes
 
-Steven González — [@sgonzalezb-dev](https://github.com/sgonzalezb-dev)
+* No se incluye `node_modules`
+* Se usa `.gitignore` para mantener limpio el repositorio
+
+---
+
+## 👨‍💻 Autor
+
+Steven González
+
+---
