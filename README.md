@@ -1,10 +1,10 @@
 # 🧠 Ejercicios en TypeScript
 
-Este repositorio contiene la solución de múltiples ejercicios prácticos desarrollados en TypeScript, enfocados en lógica de programación, estructuras de datos, programación funcional y buenas prácticas.
+Proyecto con múltiples sistemas desarrollados en TypeScript aplicando buenas prácticas y tipado estricto.
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Estructura
 
 ```
 /
@@ -28,80 +28,25 @@ Este repositorio contiene la solución de múltiples ejercicios prácticos desar
 
 ---
 
-## 🧠 Descripción de los ejercicios
-
-| Archivo             | Descripción                                    |
-| ------------------- | ---------------------------------------------- |
-| banco.ts            | Sistema de cuentas bancarias                   |
-| cajero.ts           | Simulación básica de cajero                    |
-| cajeroautomatico.ts | Cajero completo con historial de transacciones |
-| carrito.ts          | Sistema de compras con carrito                 |
-| cine.ts             | Venta de boletas con control de asientos       |
-| digiturno.ts        | Sistema de turnos (FIFO)                       |
-| estadio.ts          | Reservas por zonas                             |
-| lavadoras.ts        | Alquiler de lavadoras por horas                |
-| sistemah.ts         | Sistema de hotel con reservas y descuentos     |
-
----
-
-## 🛠️ Requisitos
-
-* Node.js v18+
-* npm
-
----
-
-## 📦 Instalación
+## ▶️ Ejecutar
 
 ```bash
 npm install
+npm run dev
 ```
 
 ---
 
-## ▶️ Ejecución
+## 🧠 Ejercicios incluidos
 
-### Ejecutar todo el sistema
-
-```bash
-npx ts-node src/index.ts
-```
-
-### Ejecutar un archivo específico
-
-```bash
-npx ts-node src/cajeroautomatico.ts
-npx ts-node src/cine.ts
-```
-
----
-
-## ⚙️ Tecnologías utilizadas
-
-* TypeScript
-* Node.js
-* ts-node
-
----
-
-## 🧠 Buenas prácticas implementadas
-
-* Tipado estricto
-* Modularidad (archivos separados)
-* Validaciones de datos
-* Manejo de estados (disponible/ocupado)
-* Programación funcional:
-
-  * map()
-  * filter()
-  * reduce()
-
----
-
-## 🚫 Notas importantes
-
-* No se incluye `node_modules`
-* Se usa `.gitignore` para mantener limpio el repositorio
+* Cajero automático
+* Sistema de hotel
+* Lavadoras
+* Fila de banco (FIFO)
+* Cine
+* Carrito de compras
+* Estadio
+* Sistema bancario
 
 ---
 
